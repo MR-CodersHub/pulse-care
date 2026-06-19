@@ -1,0 +1,499 @@
+/* 
+==================================================
+PulseCare Premium Healthcare Template CSS
+Responsive Stylesheet (Breakpoints)
+==================================================
+*/
+
+/* ==================================================
+Breakpoint: @media (max-width: 1200px)
+================================================== */
+@media (max-width: 1200px) {
+  :root {
+    --container-width: 960px;
+  }
+  
+  .footer-grid {
+    gap: 2rem;
+  }
+}
+
+/* ==================================================
+Breakpoint: @media (min-width: 993px) and (max-width: 1199px)
+Tablet Navbar – Tighten spacing to prevent crowding
+================================================== */
+@media (min-width: 993px) and (max-width: 1199px) {
+  .nav-menu {
+    gap: 1.25rem;
+  }
+
+  .nav-link {
+    font-size: 0.88rem;
+  }
+
+  .nav-actions {
+    gap: 0.6rem !important;
+  }
+
+  .theme-toggle, .lang-toggle, .profile-toggle {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1.05rem !important;
+  }
+
+  .nav-actions > .btn {
+    padding: 0.4rem 0.9rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  .logo {
+    font-size: 1.35rem;
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .container.navbar {
+    padding: 0 1rem;
+  }
+}
+
+/* ==================================================
+Breakpoint: @media (max-width: 1024px)
+================================================== */
+@media (max-width: 1024px) {
+  /* Reduce large gaps in columns on tablets */
+  .grid[style*="gap: 4rem"],
+  div[style*="gap: 4rem"] {
+    gap: 2rem !important;
+  }
+
+  /* Wrap trust card elements to prevent overflow */
+  .hero-card-trust {
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+  }
+
+  /* Wrap trend labels naturally inside KPI elements */
+  .kpi-trend {
+    flex-wrap: wrap !important;
+  }
+
+  /* Wrap hero CTA buttons when columns narrow */
+  .hero-cta-group {
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+  }
+
+  /* Ensure hero badge/pill labels fit inside viewport and wrap properly */
+  .section.section-bg span[style*="text-transform: uppercase"] {
+    max-width: 100% !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Prevent header legend and badges in main dashboard card from overflowing */
+  .hero-card-main > .flex.justify-between {
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+  }
+  .hero-card-main .flex.align-center.mt-1 {
+    flex-wrap: wrap !important;
+    gap: 0.75rem !important;
+  }
+
+  /* Fluid auto-fit columns for KPI layout */
+  .dashboard-kpi-grid {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) !important;
+    gap: 1rem !important;
+  }
+
+  /* Optimize padding of the main visual card on large tablets */
+  .hero-card-main {
+    padding: 1.75rem !important;
+  }
+}
+
+/* ==================================================
+Breakpoint: @media (max-width: 992px)
+================================================== */
+@media (max-width: 992px) {
+  :root {
+    --container-width: 90%;
+  }
+
+  /* Redesign container padding on tablets to fit metric visualizations */
+  .hero-card-main {
+    padding: 1.5rem !important;
+  }
+
+  /* Disable scroll reveals on mobile and tablet to ensure content is always visible and prevent empty whitespace bugs */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+
+  /* Hero Top Padding Overrides */
+  .section.section-bg[style*="padding-top: 6.5rem"],
+  .section.section-bg[style*="padding-top: 6rem"] {
+    padding-top: 2.5rem !important;
+  }
+  
+  /* Section Spacing adjustments */
+  .section {
+    padding: 4rem 0;
+  }
+  
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.85rem;
+  }
+  
+  /* Navbar changes - Hide regular menu, display toggle */
+  .nav-menu {
+    display: none;
+  }
+  
+  .mobile-nav-toggle {
+    display: block;
+  }
+  
+  /* Footer changes */
+  .footer {
+    padding: 3rem 0 2rem 0 !important;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .footer-bottom {
+    padding-top: 1.5rem !important;
+  }
+
+  /* Quick Navigation Hub Center Alignment for Tablet */
+  .quick-nav-bar .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 1rem !important;
+  }
+  .quick-nav-bar .container > div.flex {
+    justify-content: center !important;
+  }
+
+  /* Mobile navbar sidebar Book Clinic button contrast & size reset */
+  .mobile-sidebar a.btn.mobile-sidebar-close {
+    color: #ffffff !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+  }
+  .mobile-sidebar a.btn.mobile-sidebar-close:hover {
+    color: #ffffff !important;
+  }
+}
+
+/* ==================================================
+Breakpoint: @media (max-width: 768px)
+================================================== */
+@media (max-width: 768px) {
+  :root {
+    --container-width: 92%;
+    --header-height: 70px;
+  }
+  
+  .topbar {
+    display: none; /* Hide topbar on mobile/tablets for vertical space */
+  }
+  
+  .header.sticky {
+    height: var(--header-height);
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  
+  /* Footer changes */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .footer-bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  /* Card Padding Normalization on Tablet */
+  .card[style*="padding: 3rem"] {
+    padding: 2rem !important;
+  }
+}
+
+/* ==================================================
+Breakpoint: @media (max-width: 576px)
+================================================== */
+@media (max-width: 576px) {
+  :root {
+    --container-width: 100%;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  /* Adjust buttons size on very small screens (excluding small buttons) */
+  .btn:not(.btn-sm):not(.inline-btn) {
+    width: 100%; /* Force full-width block buttons for touch compliance */
+  }
+  
+  .mobile-sidebar {
+    width: 100%;
+    right: -100%;
+  }
+  
+  html[dir="rtl"] .mobile-sidebar {
+    left: -100%;
+  }
+
+  /* Accessible Typography Auto-scaling */
+  h1 {
+    font-size: 2rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Mobile Header Toggles and Touch Area Fitting */
+  .nav-actions {
+    gap: 0.5rem !important;
+  }
+  .theme-toggle, .lang-toggle, .profile-toggle {
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 1rem !important;
+  }
+  .logo {
+    font-size: 1.15rem !important;
+  }
+  .logo-icon {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Force minmax grids to collapse to 1fr on mobile */
+  .grid[style*="minmax(320px"],
+  div[style*="minmax(320px"],
+  .grid[style*="minmax(300px"],
+  div[style*="minmax(300px"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Dashboard KPI Grid Collapse */
+  .dashboard-kpi-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  .chart-svg {
+    height: auto !important;
+    max-height: 220px !important;
+  }
+
+  /* Hero Top Padding Overrides */
+  .section.section-bg[style*="padding-top: 6.5rem"],
+  .section.section-bg[style*="padding-top: 6rem"] {
+    padding-top: 1.5rem !important;
+  }
+
+  /* Footer Spacing Normalization */
+  .footer {
+    padding: 2.5rem 0 1.5rem 0 !important;
+  }
+  .footer-grid {
+    margin-bottom: 1.5rem !important;
+    gap: 1.75rem !important;
+  }
+
+  /* Home 2 Overflow Resolution */
+  .packages-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-card-trust {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  /* Card Padding Normalization on Mobile */
+  .card[style*="padding: 3rem"] {
+    padding: 1.5rem !important;
+  }
+
+  /* Reduce card padding on mobile dashboard mockup container */
+  .hero-card-main {
+    padding: 1.25rem !important;
+  }
+
+  /* Quick Navigation Hub Center Alignment for Mobile */
+  .quick-nav-bar .container > div.flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+  .quick-nav-bar .container > div.flex > a {
+    width: 100% !important;
+    max-width: 280px !important;
+    text-align: center !important;
+  }
+
+  /* Checkbox alignment correction */
+  .auth-card input[type="checkbox"] {
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Signup page compliance label alignment */
+  .auth-card .form-group label.flex.align-center {
+    align-items: flex-start !important;
+  }
+  .auth-card .form-group label.flex.align-center input[type="checkbox"] {
+    margin-top: 0.2rem !important;
+  }
+
+  /* Dashboard Header Mobile Scaling Fix */
+  .db-navbar h1 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Login page helper toggles layout stack for very narrow viewports */
+  @media (max-width: 400px) {
+    .auth-card .flex.justify-between.align-center.mb-4 {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 0.75rem !important;
+    }
+  }
+}
+
+/* ==================================================
+Global Responsive Attribute Overrides (Inline Layouts Fix)
+================================================= */
+@media (max-width: 992px) {
+  /* Safely collapse all hardcoded inline columns in content areas */
+  .grid[style*="grid-template-columns: 1fr 1fr"],
+  .grid[style*="grid-template-columns: 1.1fr 0.9fr"],
+  .grid[style*="grid-template-columns: 1fr 1.1fr"],
+  .grid[style*="grid-template-columns: 1fr 1.2fr"],
+  .grid[style*="grid-template-columns: 2fr 1fr"],
+  .grid[style*="grid-template-columns: 1.15fr 0.85fr"],
+  .grid[style*="grid-template-columns: 0.85fr 1.15fr"],
+  .grid[style*="grid-template-columns: 0.9fr 1.1fr"],
+  .grid[style*="grid-template-columns: 0.9fr 1.1fr;"],
+  div[style*="grid-template-columns: 1fr 1fr"],
+  .container.grid[style*="grid-template-columns: 1fr 1fr"],
+  .container.grid[style*="grid-template-columns: 1.1fr 0.9fr"],
+  .container.grid[style*="grid-template-columns: 2fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  
+  /* Hide navbar Book Clinic button on tablets to avoid header overflow */
+  .nav-actions > .btn {
+    display: none !important;
+  }
+  
+  /* Collapse dashboard elements with inline columns */
+  .db-charts-row[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Reset hardcoded asymmetrical blog padding */
+  .card.grid div[style*="padding: 3.5rem"] {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  /* Hero Interactive Mockups alignment */
+  .fade-in-right .card[style*="width: 90%"],
+  .fade-in-right .card[style*="width: 85%"] {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 2rem !important;
+    position: relative !important;
+    left: 0 !important;
+    bottom: 0 !important;
+  }
+  .fade-in-right .card[style*="position: absolute"] {
+    position: relative !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    margin-top: 1.5rem !important;
+    width: 100% !important;
+  }
+  
+  /* Partner Logos alignment */
+  .container.text-center div[style*="opacity: 0.65"] {
+    justify-content: center !important;
+    gap: 2.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Safely collapse form fields grid (e.g. Booking & Contact Forms) */
+  .grid[style*="grid-template-columns: 1fr 1fr"],
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+  
+  /* Additional fine-tuning for touch-friendly spacing */
+  .form-group {
+    margin-bottom: 1.25rem !important;
+  }
+
+  /* Footer social icons touch size */
+  .footer-brand .social-links a {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.1rem !important;
+  }
+}

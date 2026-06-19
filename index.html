@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseCare - Mobile Flu Shot & Wellness Clinic Services</title>
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="PulseCare offers convenient mobile flu vaccinations and wellness shots right to your doorstep, business, or community center. Book your group appointment today.">
+  <meta name="keywords"
+    content="mobile clinic, flu shot, wellness shots, home vaccination, corporate flu shots, medical services">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Design System & Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <style>
+    @media (max-width: 992px) {
+      .discovery-item {
+        border-right: none !important;
+        padding-right: 0 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. Topbar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-info">
+        <span><i class="fa-solid fa-phone"></i> +1 (800) 555-0199</span>
+        <span><i class="fa-solid fa-clock"></i> Mon - Sun: 7:00 AM - 8:00 PM</span>
+        <span><i class="fa-solid fa-location-dot"></i> We come directly to you!</span>
+      </div>
+      <div class="topbar-social">
+        <a href="#" aria-label="Visit Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Visit Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Visit LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Visit Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Sleek Glassmorphic Navbar -->
+  <!-- 2. Sleek Glassmorphic Navbar -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-heartbeat"></i></div>
+        PulseCare
+      </a>
+
+      <!-- Central Menu -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/home2.html" class="nav-link">Home 2</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="pages/blog.html" class="nav-link">Health Resources</a>
+        <a href="pages/services.html" class="nav-link">Service</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right CTA Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle Dark/Light Mode"><i class="fa-solid fa-moon"></i></button>
+        <button class="lang-toggle" aria-label="Toggle RTL Layout"><i class="fa-solid fa-right-left"></i></button>
+
+        <!-- Profile/User Icon Dropdown Menu -->
+        <div class="nav-item-dropdown profile-dropdown">
+          <button class="profile-toggle" aria-label="Profile Account Menu"
+            style="width: 40px; height: 40px; border-radius: var(--radius-md); background-color: var(--surface); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--secondary); font-size: 1.2rem; transition: var(--transition);">
+            <i class="fa-solid fa-user-circle"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a href="pages/login.html" class="dropdown-item"><i class="fa-solid fa-right-to-bracket"></i>
+              Signup/Login</a>
+            <a href="pages/dashboard-admin.html" class="dropdown-item"><i class="fa-solid fa-user-gear"></i> Admin
+              Dashboard</a>
+            <a href="pages/dashboard-user.html" class="dropdown-item"><i class="fa-solid fa-chart-pie"></i> User
+              Dashboard</a>
+          </div>
+        </div>
+
+        <a href="#book-appointment" class="btn btn-primary btn-sm">Book Clinic</a>
+        <div class="mobile-nav-toggle" aria-label="Open Navigation Menu"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Sidebar menu -->
+  <div class="mobile-sidebar">
+    <div class="mobile-sidebar-header">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-heartbeat"></i></div>
+        PulseCare
+      </a>
+      <div class="mobile-sidebar-close"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <div class="mobile-sidebar-menu">
+      <a href="index.html" class="mobile-sidebar-link active">Home</a>
+      <a href="pages/home2.html" class="mobile-sidebar-link">Home 2</a>
+      <a href="pages/about.html" class="mobile-sidebar-link">About</a>
+      <a href="pages/blog.html" class="mobile-sidebar-link">Health Resources</a>
+      <a href="pages/services.html" class="mobile-sidebar-link">Service</a>
+      <a href="pages/contact.html" class="mobile-sidebar-link">Contact</a>
+      <div class="mobile-sidebar-item" style="margin-top: 1.5rem;">
+        <a href="#book-appointment" class="btn btn-primary btn-sm mobile-sidebar-close" style="width: 100%;">Book
+          Clinic</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section section-bg reveal" style="padding-top: 6.5rem; padding-bottom: 5rem; overflow: hidden;">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+      <!-- Hero Left Copy -->
+      <div class="fade-in-left">
+        <div
+          style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 600; color: var(--primary); background-color: var(--primary-light); padding: 0.4rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.5rem;">
+          <span class="pulse-badge"></span> Mobile Flu Shot & Wellness Clinic Services
+        </div>
+        <h1 style="font-size: 3rem; margin-bottom: 1.5rem;">Direct-to-Door Mobile Flu Shots & Wellness Clinic Services
+        </h1>
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Avoid clinic lines. Our certified Registered Nurses bring
+          mobile flu vaccinations, preventive wellness visits, and at-home healthcare services directly to children,
+          adults, seniors, families, and corporate teams in the comfort of their homes or workplaces.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#book-appointment" class="btn btn-primary btn-lg"><i class="fa-solid fa-calendar-check"></i> Book
+            Mobile Unit</a>
+          <a href="pages/services.html" class="btn btn-outline btn-lg">Explore Wellness Services</a>
+        </div>
+        <div class="flex align-center mt-4" style="gap: 1.5rem;">
+          <div style="display: flex; margin-right: -10px;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: #cbd5e1; border: 2px solid #ffffff; overflow: hidden; font-size: 0.75rem; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #475569;">
+              DR</div>
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: #cbd5e1; border: 2px solid #ffffff; overflow: hidden; margin-left: -12px; font-size: 0.75rem; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #475569;">
+              NS</div>
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: #cbd5e1; border: 2px solid #ffffff; overflow: hidden; margin-left: -12px; font-size: 0.75rem; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #475569;">
+              MD</div>
+          </div>
+          <span style="font-size: 0.85rem; font-weight: 500; color: var(--text-muted);">Trusted by
+            <strong>15,000+</strong> patients and families seeking convenient, safe, and professional home care.</span>
+        </div>
+      </div>
+
+      <!-- Hero Right Healthcare Image Mockup -->
+      <div class="fade-in-right" style="position: relative;">
+        <!-- Card 1: Healthcare Image Container -->
+        <div class="card hero-image-card"
+          style="position: relative; z-index: 2; width: 90%; margin-left: auto; border-radius: var(--radius-lg); padding: 0; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-xl); transition: var(--transition);">
+          <div class="image-wrapper" style="aspect-ratio: 4 / 3; width: 100%; height: 100%; overflow: hidden;">
+            <img src="./assets/images/mobile_nurse_visit.png"
+              alt="Registered Nurse administering flu shot in a clean, professional home care setting"
+              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--transition);">
+          </div>
+        </div>
+
+        <!-- Trust Indicator: Mobile Safe Clinic -->
+        <div class="card hover-lift hero-card-trust"
+          style="width: 90%; margin-left: auto; margin-top: 1.5rem; padding: 1.25rem 1.5rem; display: flex; align-items: center; justify-content: space-between; border-radius: var(--radius-md);">
+          <div class="flex align-center" style="gap: 1rem;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--accent-light); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 0.85rem; margin-bottom: 0.15rem; font-weight: 600; color: var(--secondary);">Mobile
+                Safe Clinic</h4>
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">FDA Approved & CDC
+                Protocol</span>
+            </div>
+          </div>
+          <span
+            style="font-size: 0.7rem; font-weight: 600; color: var(--accent); background-color: var(--accent-light); padding: 0.25rem 0.6rem; border-radius: var(--radius-full);"><i
+              class="fa-solid fa-check-circle"></i> Registered Clinic</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Discovery Ribbon -->
+    <div class="container reveal" style="margin-top: 3rem; position: relative; z-index: 10;">
+      <div class="card"
+        style="padding: 1.5rem 2rem; border-radius: var(--radius-md); border: 1px solid var(--border); box-shadow: var(--shadow-lg); background-color: var(--surface-card); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; align-items: center;">
+        <div
+          style="display: flex; align-items: center; gap: 1rem; border-right: 1px solid var(--border); padding-right: 1rem;"
+          class="discovery-item">
+          <div
+            style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <div>
+            <h4 style="font-size: 0.85rem; margin-bottom: 0.15rem; font-weight: 700;">Book Appointment</h4>
+            <a href="#book-appointment" style="font-size: 0.75rem; font-weight: 600; color: var(--primary);">Schedule
+              Nurse Visit <i class="fa-solid fa-chevron-right" style="font-size: 0.65rem;"></i></a>
+          </div>
+        </div>
+        <div
+          style="display: flex; align-items: center; gap: 1rem; border-right: 1px solid var(--border); padding-right: 1rem;"
+          class="discovery-item">
+          <div
+            style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--accent-light); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div>
+            <h4 style="font-size: 0.85rem; margin-bottom: 0.15rem; font-weight: 700;">Service Hours</h4>
+            <a href="pages/services.html" style="font-size: 0.75rem; font-weight: 600; color: var(--accent);">Mon - Sun:
+              7am - 8pm <i class="fa-solid fa-chevron-right" style="font-size: 0.65rem;"></i></a>
+          </div>
+        </div>
+        <div
+          style="display: flex; align-items: center; gap: 1rem; border-right: 1px solid var(--border); padding-right: 1rem;"
+          class="discovery-item">
+          <div
+            style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--success-light); color: var(--success); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <div>
+            <h4 style="font-size: 0.85rem; margin-bottom: 0.15rem; font-weight: 700;">Coverage Areas</h4>
+            <a href="pages/contact.html" style="font-size: 0.75rem; font-weight: 600; color: var(--success);">Travel
+              Fees Waived <i class="fa-solid fa-chevron-right" style="font-size: 0.65rem;"></i></a>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;" class="discovery-item">
+          <div
+            style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div>
+            <h4 style="font-size: 0.85rem; margin-bottom: 0.15rem; font-weight: 700;">Contact Information</h4>
+            <a href="tel:+18005550199" style="font-size: 0.75rem; font-weight: 600; color: var(--text-muted);">+1 (800)
+              555-0199</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Statistics Counter -->
+  <section class="section reveal" style="background-color: var(--secondary); color: #ffffff; padding: 4.5rem 0;">
+    <div class="container grid"
+      style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; text-align: center;">
+      <div>
+        <div class="stat-number" style="color: #ffffff; font-size: 3rem; margin-bottom: 0.5rem;">15k+</div>
+        <span style="color: #94a3b8; font-weight: 500; font-size: 0.95rem;">Satisfied Patients</span>
+      </div>
+      <div>
+        <div class="stat-number" style="color: #ffffff; font-size: 3rem; margin-bottom: 0.5rem;">280+</div>
+        <span style="color: #94a3b8; font-weight: 500; font-size: 0.95rem;">Corporate Partners</span>
+      </div>
+      <div>
+        <div class="stat-number" style="color: #ffffff; font-size: 3rem; margin-bottom: 0.5rem;">99.8%</div>
+        <span style="color: #94a3b8; font-weight: 500; font-size: 0.95rem;">Vaccine Safety Rate</span>
+      </div>
+      <div>
+        <div class="stat-number" style="color: #ffffff; font-size: 3rem; margin-bottom: 0.5rem;">32</div>
+        <span style="color: #94a3b8; font-weight: 500; font-size: 0.95rem;">Mobile Clinic Vans</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Trusted Partners -->
+  <section class="section reveal" style="padding: 3rem 0; border-bottom: 1px solid var(--border);">
+    <div class="container text-center">
+      <p
+        style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 2rem;">
+        In Cooperation With Leading Healthcare Insurances & Organizations</p>
+      <div
+        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; opacity: 0.65;">
+        <span
+          style="font-size: 1.5rem; font-weight: 700; color: var(--text-muted); font-family: 'Poppins', sans-serif;"><i
+            class="fa-solid fa-hospital"></i> AetnaCare</span>
+        <span
+          style="font-size: 1.5rem; font-weight: 700; color: var(--text-muted); font-family: 'Poppins', sans-serif;"><i
+            class="fa-solid fa-heart-pulse"></i> BlueCross</span>
+        <span
+          style="font-size: 1.5rem; font-weight: 700; color: var(--text-muted); font-family: 'Poppins', sans-serif;"><i
+            class="fa-solid fa-user-doctor"></i> Kaiser</span>
+        <span
+          style="font-size: 1.5rem; font-weight: 700; color: var(--text-muted); font-family: 'Poppins', sans-serif;"><i
+            class="fa-solid fa-house-chimney-medical"></i> UnitedHealth</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Flu Shots at Home Section -->
+  <section class="section reveal" style="border-bottom: 1px solid var(--border);">
+    <div class="container grid" style="grid-template-columns: 1fr 1.1fr; gap: 4rem; align-items: center;">
+      <!-- Left side: Content -->
+      <div>
+        <span class="tag" style="background-color: var(--primary-light); color: var(--primary);">Preventative
+          Care</span>
+        <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Mobile Flu Shots in the Comfort of Your Home</h2>
+        <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">Getting your annual flu vaccine shouldn't involve long
+          commutes, pharmacy waiting queues, or exposure to sick patients in clinics. Our Registered Nurses bring active
+          temperature-controlled vaccines directly to you.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fa-solid fa-house-chimney"
+              style="color: var(--primary); font-size: 1.25rem; margin-top: 0.25rem;"></i>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Complete In-Home Safety</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">We set up a clean, sterile
+                workspace inside your living room, performing pre-vaccine vitals checks and CDC health pre-screenings.
+              </p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fa-solid fa-shield-virus"
+              style="color: var(--accent); font-size: 1.25rem; margin-top: 0.25rem;"></i>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Zero Clinic Exposure</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">Protect young children, pregnant
+                mothers, and elderly grandparents from public waiting rooms where sick patients gather.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fa-solid fa-users" style="color: var(--success); font-size: 1.25rem; margin-top: 0.25rem;"></i>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Coordinated Family Visits</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">Immunize your entire household
+                in a single, coordinated 30-minute visit. We make vaccines stress-free for all demographics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Healthcare Image Container -->
+      <div class="card hero-image-card"
+        style="border-radius: var(--radius-lg); padding: 0; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-xl); transition: var(--transition);">
+        <div style="aspect-ratio: 4 / 3; width: 100%; height: 100%; overflow: hidden;">
+          <img src="./assets/images/img1.png" alt="Registered Nurse administering flu shot in a clean home environment"
+            style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Services Grid -->
+  <section class="section reveal" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Preventative Wellness & Care</span>
+        <h2>Mobile Healthcare & Vaccination Services</h2>
+        <p>Choose from our specialized mobile healthcare services. All treatments are administered directly in your
+          home, community, or workplace by certified Registered Nurses.</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+        <!-- Service 1 -->
+        <div class="card hover-lift clinical-card">
+          <div
+            style="width: 56px; height: 56px; border-radius: var(--radius-md); background-color: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.75rem;">
+            <i class="fa-solid fa-syringe"></i>
+          </div>
+          <h3 class="clinical-title" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Quadrivalent Flu Vaccination
+          </h3>
+          <p class="clinical-desc" style="font-size: 0.95rem; margin-bottom: 1.5rem;">Annual flu vaccine administered
+            directly to you. Comprehensive prevention for children, adults, seniors, families, and corporate teams.</p>
+          <div class="flex justify-between align-center clinical-footer">
+            <span style="font-weight: 700; font-size: 1.15rem; color: var(--secondary);">$39 <span
+                style="font-size: 0.8rem; font-weight: 500; color: var(--text-muted);">/shot</span></span>
+            <a href="pages/service-details.html" class="btn-text">Read Details <i
+                class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card hover-lift clinical-card">
+          <div
+            style="width: 56px; height: 56px; border-radius: var(--radius-md); background-color: var(--accent-light); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.75rem;">
+            <i class="fa-solid fa-virus"></i>
+          </div>
+          <h3 class="clinical-title" style="font-size: 1.25rem; margin-bottom: 0.75rem;">At-Home Wellness Visits</h3>
+          <p class="clinical-desc" style="font-size: 0.95rem; margin-bottom: 1.5rem;">Personalized preventative
+            checkups, vital monitoring, and vitamin immunizations to boost metabolic rate, concentration, and natural
+            energy.</p>
+          <div class="flex justify-between align-center clinical-footer">
+            <span style="font-weight: 700; font-size: 1.15rem; color: var(--secondary);">$29 <span
+                style="font-size: 0.8rem; font-weight: 500; color: var(--text-muted);">/visit</span></span>
+            <a href="pages/service2.html" class="btn-text">Read Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card hover-lift clinical-card">
+          <div
+            style="width: 56px; height: 56px; border-radius: var(--radius-md); background-color: var(--success-light); color: var(--success); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.75rem;">
+            <i class="fa-solid fa-kit-medical"></i>
+          </div>
+          <h3 class="clinical-title" style="font-size: 1.25rem; margin-bottom: 0.75rem;">At-Home Healthcare Services
+          </h3>
+          <p class="clinical-desc" style="font-size: 0.95rem; margin-bottom: 1.5rem;">Direct physical rehydration
+            therapies, normal saline solutions, and vital clinical nutrients administered directly in your living room
+            or office.</p>
+          <div class="flex justify-between align-center clinical-footer">
+            <span style="font-weight: 700; font-size: 1.15rem; color: var(--secondary);">$119 <span
+                style="font-size: 0.8rem; font-weight: 500; color: var(--text-muted);">/session</span></span>
+            <a href="pages/service3.html" class="btn-text">Read Details <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wellness Services Section -->
+  <section class="section reveal" style="border-top: 1px solid var(--border); background-color: var(--surface);">
+    <div class="container grid" style="grid-template-columns: 1fr 1.1fr; gap: 4rem; align-items: center;">
+      <!-- Left side: Healthcare Image Container -->
+      <div class="card hero-image-card"
+        style="border-radius: var(--radius-lg); padding: 0; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-xl); transition: var(--transition);">
+        <div style="aspect-ratio: 4 / 3; width: 100%; height: 100%; overflow: hidden;">
+          <img src="./assets/images/img2.png" alt="Registered Nurse checking patient wellness parameters"
+            style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Right side: Content -->
+      <div>
+        <span class="tag" style="background-color: var(--accent-light); color: var(--accent);">Preventative
+          Wellness</span>
+        <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">At-Home Wellness Checkups & Immunization Support</h2>
+        <p style="margin-bottom: 1.5rem; font-size: 1.05rem;">Wellness is more than avoiding illness; it's about
+          actively tracking your health metrics and boosting your body's natural defenses. Our Registered Nurses perform
+          checkups directly at your door.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fa-solid fa-heart-pulse"
+              style="color: var(--accent); font-size: 1.25rem; margin-top: 0.25rem;"></i>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Vital Health Screenings</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">During every wellness visit, our
+                nurses review your medical history, check blood pressure, monitor oxygen levels, and perform heart rate
+                tracking.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fa-solid fa-battery-three-quarters"
+              style="color: var(--primary); font-size: 1.25rem; margin-top: 0.25rem;"></i>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Immunity Boosts & Hydration</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">We administer customized vitamin
+                boosters (like Methylcobalamin B12) and hydration therapy to lift fatigue, restore metabolic rates, and
+                strengthen cognitive clarity.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <i class="fa-solid fa-clipboard-check"
+              style="color: var(--success); font-size: 1.25rem; margin-top: 0.25rem;"></i>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.15rem;">Personalized Wellness Guidance</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">Every checkup concludes with
+                professional nutritional counsel, advice on seasonal disease prevention, and direct superbill record
+                creation for claims.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.5 Specialized Vaccination & Wellness Programs -->
+  <section class="section reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+      <!-- Left Column: Unified Healthcare Image -->
+      <div class="card choose-us-image-card"
+        style="border-radius: var(--radius-lg); padding: 0; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-xl); transition: var(--transition);">
+        <div style="aspect-ratio: 4 / 3; width: 100%; height: 100%; overflow: hidden;">
+          <img src="./assets/images/img3.png" alt="Registered Nurse administering in-home vaccination"
+            style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Right Column: Programs Content -->
+      <div>
+        <span class="tag">Vaccination Programs</span>
+        <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Specialized Healthcare Programs for All Ages</h2>
+        <p style="margin-bottom: 2rem;">PulseCare designs custom mobile clinic plans to meet the unique safety
+          guidelines and requirements of different age brackets and organizational frameworks.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+          <div style="display: flex; gap: 1.25rem;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="fa-solid fa-child"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Pediatric & Family Home Visits</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">Our Registered Nurses are
+                trained to administer stress-free, gentle pediatric flu shots to children in the calming familiarity of
+                their home, avoiding clinic anxiety.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1.25rem;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--accent-light); color: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="fa-solid fa-blind"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Senior Safety Care Initiatives</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">We provide senior citizens with
+                personalized care, eliminating the hazards of transit and long standing queues. Perfect for retirement
+                communities and private home visits.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1.25rem;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--success-light); color: var(--success); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Workplace & Corporate Campaigns</h4>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;">Fully managed, OSHA-compliant
+                mobile vaccination campaigns coordinating directly with corporate HR teams to minimize sick leaves and
+                increase employee safety.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5.6 Service & Safety Guarantees -->
+  <section class="section reveal"
+    style="background-color: var(--surface-card); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Clinical Guarantees</span>
+        <h2>Your Safety is Our Clinical Priority</h2>
+        <p>Every PulseCare home visit, vaccine shipment, and medical record is secured by rigorous clinical and digital
+          standards.</p>
+      </div>
+
+      <div class="grid"
+        style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+        <!-- Guarantee 1: Cold Chain -->
+        <div class="card"
+          style="border-color: var(--border); transition: var(--transition); display: flex; flex-direction: column; height: 100%;">
+          <div
+            style="width: 48px; height: 48px; border-radius: var(--radius-md); background-color: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 1.5rem;">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Cold-Chain Safety Guarantee</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); flex-grow: 1; margin-bottom: 0; line-height: 1.6;">We
+            monitor vaccine temperatures using real-time IoT dataloggers. If storage deviates from the strict 2°C to 8°C
+            CDC guideline for even a second, our system enforces automatic rescheduling to ensure vaccine potency.</p>
+        </div>
+
+        <!-- Guarantee 2: RN Only -->
+        <div class="card"
+          style="border-color: var(--border); transition: var(--transition); display: flex; flex-direction: column; height: 100%;">
+          <div
+            style="width: 48px; height: 48px; border-radius: var(--radius-md); background-color: var(--accent-light); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 1.5rem;">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">RN-Only Clinical Staffing</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); flex-grow: 1; margin-bottom: 0; line-height: 1.6;">
+            Unlike generic apps that hire uncredentialed gig-workers, all vaccinations and assessments at PulseCare are
+            strictly performed by background-checked, licensed, and state-certified Registered Nurses (RNs).</p>
+        </div>
+
+        <!-- Guarantee 3: HIPAA Data Privacy -->
+        <div class="card"
+          style="border-color: var(--border); transition: var(--transition); display: flex; flex-direction: column; height: 100%;">
+          <div
+            style="width: 48px; height: 48px; border-radius: var(--radius-md); background-color: var(--success-light); color: var(--success); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 1.5rem;">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">HIPAA Compliance & AES-256 Security</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); flex-grow: 1; margin-bottom: 0; line-height: 1.6;">Your
+            health metrics and treatment logs are protected under strict federal HIPAA regulations. All communications
+            and health records are encrypted at rest and in transit utilizing bank-grade AES-256 technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Why Choose Us -->
+  <section class="section section-bg reveal">
+    <div class="container grid" style="grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center;">
+      <div>
+        <span
+          style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); background-color: var(--primary-light); padding: 0.35rem 0.85rem; border-radius: var(--radius-full); margin-bottom: 0.75rem; display: inline-block;">Convenient
+          & Safe Home Care</span>
+        <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Why Trust PulseCare With Your Family's Health?</h2>
+        <p style="margin-bottom: 2rem;">We are a licensed, accredited mobile healthcare provider. Our team handles
+          cold-chain vaccination storage, professional in-home checkups, and child/senior immunizations with absolute
+          care and clinical safety.</p>
+
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div class="flex" style="gap: 1.25rem;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="fa-solid fa-user-nurse"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">Certified Registered Nurses</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 0;">Every shot and booster is handled by active registered
+                nurses (RNs) with board certification and emergency response training.</p>
+            </div>
+          </div>
+
+          <div class="flex" style="gap: 1.25rem;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--accent-light); color: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="fa-solid fa-temperature-arrow-down"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">Strict Cold-Chain Tracking</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 0;">Our mobile units utilize real-time temperature logs and
+                strict cooling containers, guaranteeing optimal vaccine effectiveness.</p>
+            </div>
+          </div>
+
+          <div class="flex" style="gap: 1.25rem;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--success-light); color: var(--success); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i class="fa-solid fa-file-shield"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem;">Insurance Support</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 0;">We accept major insurance plans and supply complete
+                medical receipt records (Superbills) for rapid employer reimbursements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reusable Healthcare Image Container -->
+      <div class="card choose-us-image-card"
+        style="border-radius: var(--radius-lg); padding: 0; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-xl); transition: var(--transition);">
+        <div style="aspect-ratio: 4 / 3; width: 100%; height: 100%; overflow: hidden;">
+          <img src="./assets/images/img4.png"
+            alt="Certified Registered Nurse administering vaccination to a family member in their home"
+            style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 8. Appointment Process -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Patient Journey</span>
+        <h2>Our 6-Step Mobile Clinical Care Journey</h2>
+        <p>From booking your appointment to post-visit checkups, we deliver professional, safe, and stress-free care
+          directly to you.</p>
+      </div>
+
+      <div class="journey-container">
+        <div class="journey-line"></div>
+
+        <!-- Step 1 -->
+        <div class="journey-step">
+          <div class="journey-content">
+            <span class="journey-badge">Step 01</span>
+            <h4 style="font-size: 1.15rem; margin-top: 0; margin-bottom: 0.5rem;">Book Appointment</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.6;">Schedule your
+              mobile clinic visit online in under two minutes. Select your preferred date, time, and specify your home,
+              community, or corporate office location.</p>
+          </div>
+          <div class="journey-icon-wrap">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <div class="journey-empty"></div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="journey-step">
+          <div class="journey-content">
+            <span class="journey-badge">Step 02</span>
+            <h4 style="font-size: 1.15rem; margin-top: 0; margin-bottom: 0.5rem;">Appointment Confirmation</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.6;">Receive
+              immediate confirmation and digital pre-visit preparation instructions. Our administrative coordinators
+              review the details and assign your designated certified Registered Nurse.</p>
+          </div>
+          <div class="journey-icon-wrap">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <div class="journey-empty"></div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="journey-step">
+          <div class="journey-content">
+            <span class="journey-badge">Step 03</span>
+            <h4 style="font-size: 1.15rem; margin-top: 0; margin-bottom: 0.5rem;">Medical Consultation</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.6;">Complete a
+              secure digital screening form. A licensed clinical manager reviews your medical history, allergies, and
+              consents beforehand to verify vaccine eligibility and clinical safety.</p>
+          </div>
+          <div class="journey-icon-wrap">
+            <i class="fa-solid fa-file-medical"></i>
+          </div>
+          <div class="journey-empty"></div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="journey-step">
+          <div class="journey-content">
+            <span class="journey-badge">Step 04</span>
+            <h4 style="font-size: 1.15rem; margin-top: 0; margin-bottom: 0.5rem;">Registered Nurse Visit</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.6;">A
+              board-certified, background-checked Registered Nurse arrives at your door with specialized
+              temperature-controlled containers and performs an initial physical/vitals checkup.</p>
+          </div>
+          <div class="journey-icon-wrap">
+            <i class="fa-solid fa-user-nurse"></i>
+          </div>
+          <div class="journey-empty"></div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="journey-step">
+          <div class="journey-content">
+            <span class="journey-badge">Step 05</span>
+            <h4 style="font-size: 1.15rem; margin-top: 0; margin-bottom: 0.5rem;">Vaccination & Wellness Service</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.6;">Your nurse
+              safely administers the FDA-approved vaccine or wellness booster (Methylcobalamin B12/hydration) and
+              observes you for 15 minutes to guarantee patient comfort and safety.</p>
+          </div>
+          <div class="journey-icon-wrap">
+            <i class="fa-solid fa-syringe"></i>
+          </div>
+          <div class="journey-empty"></div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="journey-step">
+          <div class="journey-content">
+            <span class="journey-badge">Step 06</span>
+            <h4 style="font-size: 1.15rem; margin-top: 0; margin-bottom: 0.5rem;">Follow-Up & Superbill Support</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 0; color: var(--text-muted); line-height: 1.6;">Access your
+              digital immunization logs and detailed insurance receipts (superbills) via our secure patient dashboard.
+              Our team stays in touch for any post-visit support.</p>
+          </div>
+          <div class="journey-icon-wrap">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div class="journey-empty"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Testimonials -->
+  <section class="section section-bg reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Patient Stories</span>
+        <h2>What Our Clients Say About Us</h2>
+        <p>We pride ourselves on offering smooth, warm, and highly professional clinical care.</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+        <!-- Testimonial 1 -->
+        <div class="card" style="border-color: var(--border);">
+          <div class="flex mb-3" style="color: var(--warning); gap: 0.25rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="font-style: italic; font-size: 0.95rem; margin-bottom: 1.5rem;">"PulseCare is a absolute
+            game-changer. Our entire family of 5 received our flu shots in our living room. The nurse was incredible,
+            fast, and completely patient with my young kids."</p>
+          <div class="flex align-center" style="gap: 1rem;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--primary-light); color: var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 600;">
+              AM</div>
+            <div>
+              <h4 style="font-size: 0.95rem; margin-bottom: 0.15rem;">Amanda Miller</h4>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Family Care Client</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="card" style="border-color: var(--border);">
+          <div class="flex mb-3" style="color: var(--warning); gap: 0.25rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="font-style: italic; font-size: 0.95rem; margin-bottom: 1.5rem;">"Setting up on-site corporate flu
+            shots for our 120 employees was unbelievably simple. PulseCare handled the logistics, pre-registrations, and
+            scheduling cleanly. Best wellness decision ever."</p>
+          <div class="flex align-center" style="gap: 1rem;">
+            <div
+              style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--accent-light); color: var(--accent); display: flex; align-items: center; justify-content: center; font-weight: 600;">
+              DK</div>
+            <div>
+              <h4 style="font-size: 0.95rem; margin-bottom: 0.15rem;">David K.</h4>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">HR Director, Innovate LLC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FAQ Accordion -->
+  <section class="section section-bg reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">FAQ</span>
+        <h2>Common Vaccination Questions</h2>
+        <p>Explore answers to clinical, safety, billing, and scheduling queries.</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="accordion">
+          <div class="accordion-header">
+            What services does PulseCare provide?
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p style="margin-bottom: 0; padding-top: 1rem;">PulseCare provides mobile quadrivalent flu vaccinations,
+              personalized at-home wellness visits (vitals and immunity shots), and specialized at-home clinical
+              rehydration treatments.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Who are these services for? Can children and seniors use the service?
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p style="margin-bottom: 0; padding-top: 1rem;">Yes. Our services support patients of all ages, including
+              children (pediatric-friendly Registered Nurse protocols), adults, seniors (gentle, elder-focused care),
+              families, and corporate workplace teams.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Is care provided directly at my home or workplace?
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p style="margin-bottom: 0; padding-top: 1rem;">Yes, all clinical care is delivered directly inside the
+              comfort and safety of your living room, residential community center, or company workplace, eliminating
+              clinical transit times and wait queues.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            How do mobile clinic appointments work?
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p style="margin-bottom: 0; padding-top: 1rem;">Book online by selecting your treatment, date, and address.
+              A clinical coordinator reviews your details, and a licensed Registered Nurse (RN) is dispatched to your
+              location with temperature-monitored medical equipment.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Where is the service available and are there travel fees?
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p style="margin-bottom: 0; padding-top: 1rem;">We cover standard metropolitan areas and surrounding
+              residential neighborhoods. Travel fees are completely waived for all scheduled group clinics and home
+              visits.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Will insurance reimburse my vaccination or treatment?
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p style="margin-bottom: 0; padding-top: 1rem;">Preventive vaccinations are covered 100% by most health
+              insurances. We provide comprehensive clinical superbills with standard diagnostic codes for quick
+              reimbursement submissions.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            How can I contact the PulseCare clinical team?
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p style="margin-bottom: 0; padding-top: 1rem;">You can reach our nursing support line at +1 (800) 555-0199
+              or email our clinical team at support@pulsecare.com. We are active Monday through Sunday from 7:00 AM to
+              8:00 PM.</p>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            Why should I trust PulseCare with my clinical care?
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p style="margin-bottom: 0; padding-top: 1rem;">PulseCare is a licensed, accredited mobile clinic. All
+              treatments are administered by board-certified Registered Nurses (RNs) under strict CDC guidelines,
+              utilizing continuous data-logged cold-chain logistics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. CTA Banner (Appointment Form Section) -->
+  <section class="section reveal" id="book-appointment" style="position: relative;">
+    <div class="container" style="max-width: 900px;">
+      <div class="card" style="box-shadow: var(--shadow-xl); padding: 3.5rem; border-color: var(--primary);">
+        <div class="text-center mb-5">
+          <span
+            style="font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: var(--primary); background-color: var(--primary-light); padding: 0.35rem 0.85rem; border-radius: var(--radius-full);">Schedule
+            Clinic</span>
+          <h2 style="font-size: 2.25rem; margin-top: 0.5rem; margin-bottom: 1rem;">Book a Mobile Wellness Visit</h2>
+          <p>Book your clinical treatment. A registered nurse will confirm details within 2 hours.</p>
+        </div>
+
+        <form class="needs-validation" novalidate>
+          <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="form-group form-floating">
+              <input type="text" class="form-control" id="fullName" placeholder=" " required data-validation="name">
+              <label for="fullName" class="form-label">Full Name</label>
+              <div class="invalid-feedback">Please enter a valid full name (minimum 3 letters).</div>
+            </div>
+
+            <div class="form-group form-floating">
+              <input type="email" class="form-control" id="email" placeholder=" " required data-validation="email">
+              <label for="email" class="form-label">Email Address</label>
+              <div class="invalid-feedback">Please enter a valid email address (e.g. name@domain.com).</div>
+            </div>
+          </div>
+
+          <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="form-group form-floating">
+              <input type="tel" class="form-control" id="phone" placeholder=" " required data-validation="phone">
+              <label for="phone" class="form-label">Phone Number</label>
+              <div class="invalid-feedback">Please enter a valid telephone (8 to 15 digits).</div>
+            </div>
+
+            <div class="form-group">
+              <select class="form-control" id="serviceSelect" required
+                style="padding-top: 0.85rem; padding-bottom: 0.85rem;">
+                <option value="" disabled selected>Select Wellness Treatment</option>
+                <option value="flu-shot">Quadrivalent Flu Vaccination ($39)</option>
+                <option value="b12">Immune B12 Wellness Injection ($29)</option>
+                <option value="iv">IV Hydration Electrolyte Therapy ($119)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div class="form-group form-floating">
+              <input type="date" class="form-control" id="apptDate" placeholder=" " required
+                style="padding-top: 1.5rem;">
+              <label for="apptDate" class="form-label"
+                style="top: 0.35rem; transform: translateY(0); font-size: 0.75rem; color: var(--primary);">Preferred
+                Date</label>
+            </div>
+
+            <div class="form-group form-floating">
+              <input type="text" class="form-control" id="address" placeholder=" " required>
+              <label for="address" class="form-label">Clinic Location Address</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;"><i
+              class="fa-solid fa-paper-plane"></i> Book Wellness Clinic Appointment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redesigned Premium Footer -->
+  <!-- Redesigned Premium Footer -->
+  <!-- Redesigned Premium Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Column 1: Brand Area -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="color: #ffffff;">
+          <div class="logo-icon"><i class="fa-solid fa-heartbeat"></i></div>
+          PulseCare
+        </a>
+        <p>Delivering premier preventative healthcare vaccinations and wellness treatments directly to homes, offices,
+          and neighborhood events.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Visit Facebook" class="footer-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Visit Twitter" class="footer-social-link"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="Visit LinkedIn" class="footer-social-link"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Visit Instagram" class="footer-social-link"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="pages/home2.html"><i class="fa-solid fa-chevron-right"></i> Home 2</a></li>
+          <li><a href="pages/about.html"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+          <li><a href="pages/blog.html"><i class="fa-solid fa-chevron-right"></i> Health Resources</a></li>
+          <li><a href="pages/services.html"><i class="fa-solid fa-chevron-right"></i> Service</a></li>
+          <li><a href="pages/contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Services Links -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="pages/service-details.html"><i class="fa-solid fa-chevron-right"></i> Quadrivalent Flu Shot</a>
+          </li>
+          <li><a href="pages/service2.html"><i class="fa-solid fa-chevron-right"></i> Wellness B12 Booster</a></li>
+          <li><a href="pages/service3.html"><i class="fa-solid fa-chevron-right"></i> IV Hydration Therapy</a></li>
+          <li><a href="pages/services.html"><i class="fa-solid fa-chevron-right"></i> COVID Booster Shot</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Info -->
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>
+            <strong>Phone Support</strong>
+            +1 (800) 555-0199
+          </span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>
+            <strong>Email Clinic</strong>
+            support@pulsecare.com
+          </span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>
+            <strong>Hours</strong>
+            7:00 AM - 8:00 PM
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider and Copyright -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 PulseCare Wellness Service. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="pages/privacy.html">Privacy Policy</a>
+        <a href="pages/terms.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Scroll back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- Global JavaScript Core -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

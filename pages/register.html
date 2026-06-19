@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - PulseCare Mobile Health Portal</title>
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Style Links -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  
+  <!-- Add custom strength styling -->
+  <style>
+    .password-strength-container {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .password-strength-bg {
+      height: 6px;
+      width: 100%;
+      background-color: var(--border);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+    .password-strength-meter {
+      height: 100%;
+      width: 0;
+      transition: var(--transition);
+      border-radius: var(--radius-full);
+    }
+    .password-strength-meter.weak { background-color: var(--danger); }
+    .password-strength-meter.medium { background-color: var(--warning); }
+    .password-strength-meter.strong { background-color: var(--success); }
+    .password-strength-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 0.25rem;
+      display: block;
+      text-align: right;
+    }
+    html[dir="rtl"] .password-strength-label {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Settings Bar -->
+  <div class="auth-top-bar">
+    <div class="auth-top-actions">
+      <button class="theme-toggle" aria-label="Toggle Dark/Light Mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="lang-toggle" aria-label="Toggle RTL Layout"><i class="fa-solid fa-right-left"></i></button>
+    </div>
+  </div>
+
+  <!-- Centered Register Layout -->
+  <div class="auth-wrapper reveal">
+    <!-- Subtle medical themed background glows -->
+    <div class="auth-ambient-glow-1"></div>
+    <div class="auth-ambient-glow-2"></div>
+    
+    <div class="auth-container">
+      
+      <!-- Brand Logo Header -->
+      <div class="auth-logo-container">
+        <a href="../index.html" class="logo" aria-label="PulseCare Home">
+          <div class="logo-icon"><i class="fa-solid fa-heartbeat"></i></div>
+          <span>PulseCare</span>
+        </a>
+      </div>
+
+      <!-- Authentication Card -->
+      <div class="card auth-card">
+        <div class="auth-header-text">
+          <h1>Create Account</h1>
+          <p>Get registered to schedule your clinical treatments.</p>
+        </div>
+        
+        <form class="needs-validation" novalidate action="./login.html">
+          <div class="form-group form-floating">
+            <input type="text" class="form-control" id="regName" placeholder=" " required data-validation="name">
+            <label for="regName" class="form-label">Full Name</label>
+            <div class="invalid-feedback">Please enter a valid full name (minimum 3 letters).</div>
+          </div>
+          
+          <div class="form-group form-floating">
+            <input type="email" class="form-control" id="regEmail" placeholder=" " required data-validation="email">
+            <label for="regEmail" class="form-label">Email Address</label>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          
+          <div class="form-group form-floating" style="margin-bottom: 0.5rem;">
+            <input type="password" class="form-control password-strength-input" id="regPassword" placeholder=" " required style="padding-right: 3rem;">
+            <label for="regPassword" class="form-label">Account Password</label>
+            
+            <!-- Eye icon trigger button -->
+            <button type="button" class="password-peek-toggle" aria-label="Toggle Password Visibility" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.1rem; border: none; background: none; cursor: pointer; display: flex; align-items: center; justify-content: center; height: 40px; width: 40px; z-index: 10;"><i class="fa-solid fa-eye"></i></button>
+          </div>
+          
+          <!-- Password strength bar -->
+          <div class="password-strength-container">
+            <div class="password-strength-bg">
+              <div class="password-strength-meter"></div>
+            </div>
+            <span class="password-strength-label"></span>
+          </div>
+          
+          <!-- Compliance checkbox -->
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label class="flex align-center" style="gap: 0.5rem; cursor: pointer; font-size: 0.85rem; font-weight: 500; color: var(--text-muted);">
+              <input type="checkbox" required style="width: 16px; height: 16px;"> I agree to PulseCare's <a href="./terms.html" style="color: var(--primary);">Terms</a> and <a href="./privacy.html" style="color: var(--primary);">Privacy Policies</a>
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 1.5rem;"><i class="fa-solid fa-user-plus"></i> Sign Up</button>
+          
+          <!-- Social auth options divider -->
+          <div class="auth-divider">
+            <span>Or sign up with</span>
+          </div>
+          
+          <!-- Grid of social options (Google + Apple side-by-side) -->
+          <div class="auth-social-grid">
+            <a href="./login.html" class="btn btn-outline btn-sm" aria-label="Sign up with Google"><i class="fa-brands fa-google" style="color: var(--danger);"></i> Google</a>
+            <a href="./login.html" class="btn btn-outline btn-sm" aria-label="Sign up with Apple"><i class="fa-brands fa-apple"></i> Apple</a>
+          </div>
+          
+          <div class="text-center" style="font-size: 0.9rem; color: var(--text-muted); font-weight: 500;">
+            Already have an active account? <a href="./login.html" style="color: var(--primary);">Sign In</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script references routing to parent assets folder -->
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/loader.js"></script>
+  <script src="../assets/js/validation.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

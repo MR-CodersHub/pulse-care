@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - PulseCare Management Console</title>
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Style Links -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Dashboard Container Shell -->
+  <div class="db-container">
+    
+    <!-- Sidebar Navigation panel -->
+    <aside class="db-sidebar">
+      <div>
+        <div class="db-brand">
+          <a href="../index.html" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-heartbeat"></i></div>
+            PulseCare
+          </a>
+        </div>
+        
+        <nav class="db-menu">
+          <a href="#" class="db-menu-link active" data-tab="db-admin-overview"><i class="fa-solid fa-chart-pie"></i> Analytics Overview</a>
+          <a href="#" class="db-menu-link" data-tab="db-admin-appts"><i class="fa-solid fa-calendar-check"></i> Manage Bookings</a>
+          <a href="#" class="db-menu-link" data-tab="db-admin-inventory"><i class="fa-solid fa-boxes-stacked"></i> Inventory Ledger</a>
+        </nav>
+      </div>
+      
+      <div class="db-sidebar-footer">
+        <a href="../index.html" class="db-menu-link" style="color: var(--danger);"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+      </div>
+    </aside>
+    
+    <!-- Main Dashboard content pane -->
+    <main class="db-main">
+      
+      <!-- Top header bar inside pane -->
+      <div class="db-navbar">
+        <div class="flex align-center" style="gap: 1rem;">
+          <button class="db-menu-toggle btn btn-outline btn-sm" style="display: none; padding: 0.5rem; width: 40px; height: 40px;" aria-label="Toggle Navigation"><i class="fa-solid fa-bars"></i></button>
+          <div>
+            <h1 style="font-size: 1.5rem; margin-bottom: 0.15rem;">Admin Console</h1>
+            <p style="font-size: 0.85rem; margin-bottom: 0; color: var(--text-muted);">PulseCare Clinic Management System</p>
+          </div>
+        </div>
+        
+        <div class="db-user-panel">
+          <button class="theme-toggle" aria-label="Toggle Theme" style="width: 40px; height: 40px; border-radius: var(--radius-md); border: 1px solid var(--border); background-color: var(--surface-card);"><i class="fa-solid fa-moon"></i></button>
+          <div class="db-avatar">AD</div>
+        </div>
+      </div>
+      
+      <style>
+        @media (max-width: 992px) {
+          .db-menu-toggle { display: flex !important; align-items: center; justify-content: center; }
+        }
+      </style>
+      
+      <!-- ==================================================
+      TAB PANE: ANALYTICS OVERVIEW
+      ================================================== -->
+      <div class="db-tab-pane fade-in-up" id="db-admin-overview">
+        <!-- Stat row -->
+        <div class="db-grid">
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Patients Registered</h3>
+              <div class="stat-number">1,240</div>
+            </div>
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Completed Injections</h3>
+              <div class="stat-number">128</div>
+            </div>
+            <div class="stat-icon"><i class="fa-solid fa-syringe"></i></div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-info">
+              <h3>Cold-Chain Stock</h3>
+              <div class="stat-number">840</div>
+            </div>
+            <div class="stat-icon"><i class="fa-solid fa-temperature-arrow-down"></i></div>
+          </div>
+        </div>
+        
+        <!-- Graphs split row (SVG curve and CSS vertical bars) -->
+        <div class="db-charts-row">
+          <!-- SVG Line graph -->
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <h3 style="font-size: 1.1rem; margin-bottom: 0;">Vaccinations Compliance Curve</h3>
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">Past 6 months</span>
+            </div>
+            
+            <svg class="chart-svg" viewBox="0 0 400 200">
+              <defs>
+                <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="var(--primary)" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <line x1="0" y1="50" x2="400" y2="50" class="chart-grid-line" />
+              <line x1="0" y1="100" x2="400" y2="100" class="chart-grid-line" />
+              <line x1="0" y1="150" x2="400" y2="150" class="chart-grid-line" />
+              <path d="M 0 160 Q 80 80 160 110 T 320 60 T 400 30 L 400 200 L 0 200 Z" class="chart-data-area" />
+              <path d="M 0 160 Q 80 80 160 110 T 320 60 T 400 30" class="chart-data-line" />
+            </svg>
+          </div>
+          
+          <!-- CSS vertical bar graph -->
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <h3 style="font-size: 1.1rem; margin-bottom: 0;">Weekly Clinic Runs</h3>
+            </div>
+            
+            <div class="bar-chart-container">
+              <div class="bar-wrapper">
+                <div class="bar-fill" style="height: 0;" data-height="40"></div>
+                <span class="bar-label">W1</span>
+              </div>
+              <div class="bar-wrapper">
+                <div class="bar-fill" style="height: 0;" data-height="65"></div>
+                <span class="bar-label">W2</span>
+              </div>
+              <div class="bar-wrapper">
+                <div class="bar-fill" style="height: 0;" data-height="85"></div>
+                <span class="bar-label">W3</span>
+              </div>
+              <div class="bar-wrapper">
+                <div class="bar-fill" style="height: 0;" data-height="95"></div>
+                <span class="bar-label">W4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- ==================================================
+      TAB PANE: MANAGE BOOKINGS
+      ================================================== -->
+      <div class="db-tab-pane" id="db-admin-appts" style="display: none;">
+        <div class="db-table-card">
+          <div class="flex justify-between align-center mb-4" style="gap: 2rem; flex-wrap: wrap;">
+            <h2 style="font-size: 1.35rem; margin-bottom: 0;">Patient Appointments Log</h2>
+            
+            <!-- Search queries in tables -->
+            <div style="position: relative; width: 100%; max-width: 300px;">
+              <input type="text" class="form-control" id="db-table-search" placeholder="Filter patient details..." style="padding-left: 2.5rem; font-size: 0.9rem;">
+              <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none;"></i>
+            </div>
+          </div>
+          
+          <div class="table-responsive">
+            <table class="db-table">
+              <thead>
+                <tr>
+                  <th>Patient Name</th>
+                  <th>Contact Email</th>
+                  <th>Wellness Treatment</th>
+                  <th>Scheduled Date</th>
+                  <th>Booking Status</th>
+                  <th>Console Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Amanda Miller</td>
+                  <td>amanda@gmail.com</td>
+                  <td>Flu Shot ($39)</td>
+                  <td>May 25, 2026</td>
+                  <td><span class="badge badge-pending">Pending</span></td>
+                  <td><button class="btn btn-outline btn-sm" onclick="alert('Status updated successfully!')">Approve</button></td>
+                </tr>
+                <tr>
+                  <td>Robert K.</td>
+                  <td>robert.k@innovate.com</td>
+                  <td>Corporate Bronze</td>
+                  <td>May 22, 2026</td>
+                  <td><span class="badge badge-success">Completed</span></td>
+                  <td><span style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Verified</span></td>
+                </tr>
+                <tr>
+                  <td>Jonathan S.</td>
+                  <td>jonathan@gmail.com</td>
+                  <td>IV Therapy ($119)</td>
+                  <td>May 10, 2026</td>
+                  <td><span class="badge badge-danger">Cancelled</span></td>
+                  <td><span style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Archived</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+      <!-- ==================================================
+      TAB PANE: INVENTORY LEDGER
+      ================================================== -->
+      <div class="db-tab-pane" id="db-admin-inventory" style="display: none;">
+        <div class="db-table-card">
+          <h2 style="font-size: 1.35rem; margin-bottom: 1.5rem;">Medication Cold-Chain Ledger</h2>
+          
+          <div class="table-responsive">
+            <table class="db-table">
+              <thead>
+                <tr>
+                  <th>Medication Formula</th>
+                  <th>Lot / Batch Code</th>
+                  <th>Storage Temperature</th>
+                  <th>Active Stock</th>
+                  <th>Status warning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Quadrivalent Flu Vaccine</td>
+                  <td>#FLU-2026-X9</td>
+                  <td>+3.8 &deg;C <span style="font-size: 0.8rem; color: var(--success); font-weight: 600;">(Optimal)</span></td>
+                  <td>450 vials</td>
+                  <td><span class="badge badge-success">In Stock</span></td>
+                </tr>
+                <tr>
+                  <td>Immune B12 Wellness Shot</td>
+                  <td>#B12-LOT-99D</td>
+                  <td>+4.1 &deg;C <span style="font-size: 0.8rem; color: var(--success); font-weight: 600;">(Optimal)</span></td>
+                  <td>280 vials</td>
+                  <td><span class="badge badge-success">In Stock</span></td>
+                </tr>
+                <tr>
+                  <td>IV Normal Saline bags</td>
+                  <td>#IV-SAL-15A</td>
+                  <td>Ambient <span style="font-size: 0.8rem; color: var(--success); font-weight: 600;">(Optimal)</span></td>
+                  <td>110 bags</td>
+                  <td><span class="badge badge-pending">Low Stock</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+  </div>
+
+  <!-- Global scripts referencing parent assets folder -->
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/loader.js"></script>
+  <script src="../assets/js/validation.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
